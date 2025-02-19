@@ -5,13 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .topic {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 20vh;
+  /* width: 100vw; */
+  height: 20vh; 
   margin-top: 5vh;
 }
 
@@ -56,7 +57,7 @@ h3 {
   letter-spacing: 0.2px;
   font-size: 1.5rem;
   color: white;
-  width: 136px;
+  width: 136px; 
   height: 102px;
   top: 80px;
   padding-left: 25px;
@@ -65,7 +66,7 @@ h3 {
 .categories {
   max-width: 1900px;
   min-width: 450px;
-  width: 100vw;
+  /* width: 100vw; */
   height: 50vh;
 }
 
@@ -168,22 +169,34 @@ h3 {
 }
 
 /* Start coding here */
-@media only screen and (max-width: 376px) {
-  body {
+@media only screen and (max-width: 600px) {
+.container {
+    overflow: hidden; 
+  } 
+  .categories {
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+  } 
+  .row-1,
+  .row-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
-  .row-1 {
-    flex-direction: column;
     align-items: center;
   }
-  .row-2 {
-    flex-direction: column;
-    align-items: center;
+
+  .job-more {
+    position: relative;
+    overflow-x: hidden;
+    width: 200px;
+    height: 268px;
+    padding: 20px;
+    margin: 20px 30px;
+    border: 1px solid;
+    border-radius: 8px;
+    }
   }
-  h1 {
-    font-size: 30px;
-  }
-}
+  
+
+  
